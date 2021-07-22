@@ -1,0 +1,110 @@
+<html>
+<head>
+	<title>BMW</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+<div class="main">
+		<nav>
+				<div class="logo">
+					<img src="C:/Users/DELL/Desktop/logo.png">
+					
+				</div>
+					<div class="nav-links">
+						<ul>
+							<font face="cinzel" size="2"> <b><li><a href="C:\Program Files\windows\anas\project 2\index.html">HOME</a></li>
+							<li><a href="C:\Users\DELL\Desktop\spec.html">SPEC</a></li>
+							<li><a href="#">ABOUT</a></li>
+							<li><a href="C:\Users\DELL\Desktop\contact us.html">CONTACT US</a></li></b>
+						</ul>
+					</div>
+	    </nav>
+		<div class="information">
+			<div class="overlay"></div>
+				<img src="C:/Users/DELL/Desktop/bmw1.jpg" class="bike">
+				
+			<div id="circle">
+			
+				<div class="feature one">
+					<img src="C:/Users/DELL/Desktop/engine.png">
+						<div>
+							<h1>ENGINE</h1>
+							<p>999cc inline 4 Engine</p>
+						</div>
+				</div>
+					<div class="feature two">
+						<img src="C:/Users/DELL/Desktop/speed.png">
+							<div>
+								<h1>MAX SPEED</h1>
+								<p>299 to 310 km/h</p>
+						</div>
+					</div>
+						<div class="feature three">
+							<img src="C:/Users/DELL/Desktop/tyre.png">
+								<div>
+									<h1>TYRE SIZE</h1>
+									<p>Front:120/70,Rear:190/55</p>
+							</div>
+						</div>
+				<div class="feature four">
+					<img src="C:/Users/DELL/Desktop/fuel.png">
+						<div>
+							<h1>MILEAGE</h1>
+							<p>15.6 km/l in Highway</p>
+						</div>
+				</div>
+	        </div>
+		</div>
+			<div class="controls">
+				<img src="C:/Users/DELL/Desktop/arrow.png" id="upBtn">
+				<h3>FEATURES</h3>
+				<img src="C:/Users/DELL/Desktop/arrow.png" id="downBtn">
+			</div>
+				<div class="right-col">
+					<p>Click Here To Listen Pure Exhaust Sound</p>
+					<img src="C:/Users/DELL/Desktop/play.png" id="icon">
+				</div>
+		</div>
+		<script>
+			var circle=document.getElementById("circle");
+			var upBtn=document.getElementById("upBtn");
+			var downBtn=document.getElementById("downBtn");
+			
+			var rotatevalue=circle.style.transform;
+			var rotateSum;
+			
+			upBtn.onclick=function()
+			{
+				rotateSum=rotatevalue+"rotate(-90deg)";
+				circle.style.transform=rotateSum;
+				rotatevalue=rotateSum;
+			}
+			downBtn.onclick=function()
+			{
+				rotateSum=rotatevalue+"rotate(90deg)";
+				circle.style.transform=rotateSum;
+				rotatevalue=rotateSum;
+			}
+		</script>
+		<audio id="mysong">
+			<source src="C:\Users\DELL\Desktop\song.mp3" type="audio/mp3">
+		</audio>
+	<script>
+		var mysong=document.getElementById("mysong");
+		var icon=document.getElementById("icon");
+		
+		icon.onclick=function(){
+			if(mysong.paused){	
+				mysong.play();
+				icon.src="C:/Users/DELL/Desktop/pause.png";
+			}else{
+				mysong.pause();
+				icon.src="C:/Users/DELL/Desktop/play.png";
+			}
+			
+		}
+		
+	</script>
+</body>
+</html>
