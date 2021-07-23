@@ -162,6 +162,6 @@
 		height:100vh;
 		position:relative;
 		overflow:hidden;
-		background:linear-gradient(to right,#f9b3a6,#a1fbf8);
-	
+		background:linear-gradient(to right,#f9b3a6,#a1fbf8); 
+	font-family:arial;
 }
