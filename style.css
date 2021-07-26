@@ -169,8 +169,19 @@
 	line-height:62px;
 	font-family:roboto;
 }
-	
-	.fa {
+
+footer {
+    text-align: center;
+}
+
+footer h2, footer p{
+color: white;
+}
+.contact-info a{
+    padding: 10px;
+    display: inline-block;
+}	
+.fa {
  background:black;
   padding: 20px;
   font-size: 30px;
