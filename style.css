@@ -41,7 +41,7 @@
 .nav-links ul li{
 	list-style:none;
 	display:inline-block;
-	margin:10 20px;
+	margin:20 20px;
 }
 .nav-links ul li a{
 	color:#fff;
@@ -187,7 +187,7 @@
 		position: relative;
 		margin: 0;
 		line-height: 2em;
-		padding: 1.5em;
+		padding: 2em;
 		background: #39454b;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
