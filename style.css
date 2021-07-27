@@ -253,8 +253,13 @@
 
 		}
 .bm{
-	margin-top:0;
-	margin-left:0;
+	
+	width:50px;
+	position:absolute;
+	top:5%;
+	left:2%;
+	transform:translateY(-50%);
+	z-index:1;
 }
 	
 	
