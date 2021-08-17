@@ -28,5 +28,22 @@ As of 2016, it has a wet weight of 204 kg (450 lb), and produces 148.4 kW (199.0
 				<img class="mySlides" src="image/tail.jpg">
 	</div>
  <script src="https://use.fontawesome.com/6f2832684d.js"></script>
+	 			<script>
+var myIndex = 0;
+				carousel();
+function carousel() {
+var i;
+var x =
+document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 2000); // Change image every 2
+seconds
+}
+</script>
 </body>
 </html
