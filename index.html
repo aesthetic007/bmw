@@ -5,6 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=5.0">
 	<title>BMW</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {
+    display:none;}
+</style>
 	
 </head>
 <body bgcolor="black">
@@ -23,10 +28,15 @@
 						</ul>
 					</div>
 	    </nav>
+	
 		<div class="information">
 			<div class="overlay"></div>
-				<img src="image/bmw1.jpg" class="bike">
-				
+			<div class="w3-content w3-section" style="max-width:500px">
+				<img class="mySlides" src="image/bmw1.jpg" class="bike" style="width:100%">
+				<img class="mySlides" src="left 1.jpg" style="width:100%">
+				<img class="mySlides" src="right.jpg"  style="width:100%">
+				<img class="mySlides" src="tail.jpg"   style="width:100%">
+			</div>			
 			<div id="circle">
 			
 				<div class="feature one">
@@ -162,6 +172,23 @@ variants:-
 			</footer>
 
     <script src="https://use.fontawesome.com/6f2832684d.js"></script>
+			<script>
+var myIndex = 0;
+				carousel();
+function carousel() {
+var i;
+var x =
+document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 2000); // Change image every 2
+seconds
+}
+</script>
 	   
      
 </body>
